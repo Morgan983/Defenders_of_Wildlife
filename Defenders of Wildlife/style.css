@@ -1,0 +1,165 @@
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville);
+body {
+    background-image: url('animalBackground.jpeg');
+}
+h2 {
+  text-align: center;
+  font-family: 'Libre Baskerville';
+  border: solid 2px black;
+  background-color: #a2c11c;
+}
+h3 {
+  text-align: center;
+  font-family: 'Libre Baskerville';
+  border: solid 2px black;
+  background-color: #a2c11c;
+}
+p {
+  font-family: 'Libre Baskerville';
+  background-color: #a2c11c;
+  text-align: center;
+  font-size: 20px
+}
+* {
+  box-sizing: border-box;
+}
+li {
+  font-family: 'Libre Baskerville';
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 10px;
+  background-color: #2c5d63;
+font-size: 20px;
+width: 180px;
+text-align: center;
+border-radius: 20px;
+border: solid 2px black
+}
+/* unvisited link */
+A:link {
+  color: rgb(255, 255, 255);
+}
+
+/* visited link */
+A:visited {
+  color: green;
+}
+
+/* mouse over link */
+A:hover {
+  color: purple;
+}
+
+/* selected link */
+A:active {
+  color: mediumblue;
+}
+
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+h4 {
+  text-align: center;
+  background-color: #a2c11c;
+  margin: 10px;
+  border: solid 2px black;
+  font-size: 22px;
+}
+.twitter {
+    width: 100%;
+    height: auto;
+  }
+
+  #tiger {
+    display: flex;
+    flex-wrap: flex;
+    width: 259px;
+    height: 200px;
+  }
+  #bird {
+    display: flex;
+    flex-wrap: flex;
+    width: 259px;
+    height: 200px;
+  }
+  #elephant {
+    display: flex;
+    flex-wrap: flex;
+    width: 259px;
+    height: 200px;
+  }
+  #fish {
+    display: flex;
+    flex-wrap: flex;
+    width: 259px;
+    height: 200px;
+  }
+  
+  .flip-container {
+    perspective: 1000px;
+    display: inline-block;
+  }
+
+  .flip-container:hover .flip-card {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card {
+    width: 259px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+
+  .flip-card .flip-card-front,
+  .flip-card .flip-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  .flip-card .flip-card-front {
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flip-card .flip-card-back {
+    background-color: #283739;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+  }
+
+  h6 {
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    background-color: #2c5d63;
+  }
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
